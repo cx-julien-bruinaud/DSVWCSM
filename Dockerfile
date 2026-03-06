@@ -2,6 +2,8 @@
 
 FROM alpine:3.11
 
+USER appuser
+
 RUN apk --no-cache add git python3 py-lxml \
     && rm -rf /var/cache/apk/*
 
